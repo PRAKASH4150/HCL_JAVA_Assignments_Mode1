@@ -1,0 +1,6 @@
+Question No 4:
+
+Answer:
+
+       In the main class on line number 5 we are trying to access the variable 'a' of class A.But it throws an error because the variable 'a' is the private member of class A. Since it is 
+a private member it cannot be accessed directly. It should be accessed with the help of getter method. It can be fixed by calling the getter method of class A instead of objA.a 

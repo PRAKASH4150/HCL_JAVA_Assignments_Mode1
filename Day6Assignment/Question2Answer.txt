@@ -1,0 +1,3 @@
+2.In the previous program remove the try{}catch(){} block surrounding the sleep method and try to execute the code. What is your observation? 
+Ans If we remove the try/catch block for the statement Thread.sleep(10000) it will throw InterruptedException. Since, InterruptedException is a checked exception we are forced to handle
+the exception, otherwise compilation error would occour.
