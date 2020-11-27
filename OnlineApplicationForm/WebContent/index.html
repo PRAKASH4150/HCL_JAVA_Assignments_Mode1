@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>	Online Application</title>
+	    <link rel="stylesheet" href="css/Style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="scripts/validation.js"></script>
+	</head>
+	<body>
+		<section>
+			<h1>Event Registration</h1>		
+			<div class="content">
+			 <form action="https://www.myhcl.com/bprhome/Home/Index" method="post">
+			 <table class="table table-striped table-bordered table-hover" border="1">
+					<tr>
+					   <td class="field">Name of the participant</td>
+					   <td class="value">
+					   	  <input type="text" id="name" name="name" placeholder="Enter your name" required> 
+					   </td>
+					</tr>
+					
+					<tr>
+						<td class="field">Date of Birth</td>
+						<td class="value">
+							<input type="date" id="dob" name="dob" placeholder="Enter your DOB" required>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="field">Gender</td>
+						<td class="value">
+						 <select id="gender" name="gender">
+						 	<option disabled="disabled" selected="selected">Select Gender</option>
+						 	<option value="Male">Male</option>
+						 	<option value="Female">Female</option>
+						 	<option value="Others">Others</option>
+						 </select>
+						</td>
+					</tr>
+					
+					
+					<tr>
+						<td class="field">College Name</td>
+						<td class="value">
+							<input type="text" id="college" name="college" placeholder="Enter your College Name" required>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="field">Registration Number</td>
+						<td class="value">
+						   <input type="text" id="regNumber" name="regNumber" placeholder="Enter your registration number" required>				
+						</td>
+					</tr>
+					<tr>
+						<td class="field">Branch/Department</td>
+						<td class="value">
+							<select id="branch" name="branch" required>
+							    <option disabled="disabled" selected="selected">Select your department</option>
+								<option value="Computer Science and Engineering">Computer Science and Engineering</option>
+								<option value="Information Technology">Information Technology</option>
+								<option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+								<option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+							    <option value="Electrical and Telecommunications Engineering">Electrical and Telecommunications Engineering</option>
+							    <option value="Mechanical Engineering">Mechanical Engineering</option>
+							    <option value="Civil Engineering">Civil Engineering</option>
+							    <option value="Aerospace Engineering">Aerospcace Engineering</option>
+							</select>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="field">Year</td>
+						<td class="value">
+							<select id="year" name="year" field="year" required>
+							    <option disabled="disabled" selected="selected">Select your year</otpion>
+								<option value="1">1st Year</option>
+							    <option value="2">2nd Year</option>
+							    <option value="3">3rd Year</option>
+								<option value="4">4th Year</option>		
+							</select>
+						</td>
+					</tr>
+					
+					<tr>
+						<td class="field">Event Participated</td>
+						<td class="value">
+							<select id="event" name="event" required>
+							    <option disabled="disabled" selected="selected">Select your event</option>
+								<option value="dancing">Dancing</option>
+								<option value="singing">Singing</option>
+								<option value="paper presentation">Paper Presentation</option>
+								<option value="project expo">Project Expo</option>
+							    <option value="workshop">Workshops</option>
+							    <option value="Quiz">Quiz It</option>
+							    <option value="robotic battle">Robotic Battle</option>
+							</select>
+						</td>
+					</tr>
+					
+					
+					<tr>
+						<td class="field">Contact Number</td>
+						<td class="value">
+							<input type="text" id="number" name="number" placeholder="Enter your contact Number" required>
+						</td>
+					</tr>
+			</table>
+					<input class="btn btn-success" id="submit" onclick="return validateInput()" type="submit" value="submit">
+			 </form>
+				
+			</div>
+		</section>
+		
+		
+	</body>
+</html>
