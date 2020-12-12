@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<%@ include file="navigation-bar1.jsp" %>
+    pageEncoding="ISO-8859-1"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ include file="navigation-bar1.jsp" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>User Registration</title>
+<title>User Login</title>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script
@@ -18,18 +18,18 @@
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/userregn-style.css">
-<script src="${pageContext.request.contextPath}/resources/scripts/userregn.js"></script>
-
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/login-style.css">
+<script src="${pageContext.request.contextPath}/resources/scripts/login.js"></script>
 </head>
 <body>
    <header>
 	<h1>WELCOME TO PET PEERS</h1>
-	<h2>Register to continue</h2>
+	<h2>LogIn to continue</h2>
    <header>
-    <p id="error">${error}</p>
+   
+   <p id="error">${error}</p>
 	<div id="container">
-		<form:form action="add" method="post" modelAttribute="userDetails">
+		<form:form action="authenticate" method="post" modelAttribute="logInDetails">
 
 			<label for="username" class="field">Username<span class="mandatory">*</span></label>
 			<br>
@@ -40,17 +40,15 @@
 			<br>
 			<form:password path="password" class="value" name="password" id="password"
 				placeholder="Enter a Password" />
-            <br>
-			<label for="cnfpassword" class="field">Confirm Password<span class="mandatory">*</span></label>
-			<br>
-			<form:password path="confirmPassword" class="value" name="cnfpassword"
-				id="cnfpassword" placeholder="Renter the Password" />
-            <br>
-			<input type="submit" id="button1" name="register"
-				class="btn btn-success" value="Submit" onclick="return validateForm()">
+
+			<input type="submit" id="button1" name="login"
+				class="btn btn-success" value="LogIn" onclick="return validateFields()">
 			<input type="reset" id="button2" class="btn btn-success" Value="Reset">
 		</form:form>
 	</div>
-
+	
+	<div id="container2">
+	  <a  id="extlink" href="front">If not a member yet.Please register</a>
+	</div>
 </body>
 </html>

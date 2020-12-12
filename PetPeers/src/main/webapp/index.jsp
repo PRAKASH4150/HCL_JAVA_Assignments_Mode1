@@ -7,6 +7,7 @@
 <title>PetPeers Application</title>
 </head>
 <body>
-	<a href="one">Click to register</a>
+	<a href="user/front">Click to register</a>
+	<a href="user/login">Click to LogIn</a>
 </body>
 </html>
