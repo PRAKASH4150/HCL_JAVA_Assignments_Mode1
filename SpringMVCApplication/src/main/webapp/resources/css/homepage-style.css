@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+  h1
+  {
+ 	color:Blue;
+ 	text-align:center;
+ 	font-size:50px;
+  }
+  #container
+  {
+  	width: 550px;
+	margin: 30px auto;
+	position: relative;
+	padding: 0.5%;
+	
+  }
+  .field {
+	font-weight: bold;
+	width: 200px;
+}
+
+.value {
+	width: 350px;
+}
